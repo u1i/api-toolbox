@@ -1,0 +1,748 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "",
+        "title": "Swapi",
+        "description": "The Star Wars API"
+    },
+    "host": "swapi.co",
+    "basePath": "/api",
+    "schemes": [
+        "https"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/starships/{id}": {
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "operationId": "GET-starships",
+                "summary": "Get Starships",
+                "tags": [
+                    "Starships"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/starships-input"
+                        }
+                    }
+                }
+            }
+        },
+        "/starships": {
+            "get": {
+                "operationId": "LIST-starships",
+                "summary": "List Starships",
+                "tags": [
+                    "Starships"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/starships-input"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/vehicles/{id}": {
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "operationId": "GET-vehicles",
+                "summary": "Get Vehicles",
+                "tags": [
+                    "Vehicles"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/vehicles-input"
+                        }
+                    }
+                }
+            }
+        },
+        "/vehicles": {
+            "get": {
+                "operationId": "LIST-vehicles",
+                "summary": "List Vehicles",
+                "tags": [
+                    "Vehicles"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/vehicles-input"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/species/{id}": {
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "operationId": "GET-species",
+                "summary": "Get Species",
+                "tags": [
+                    "Species"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/species-input"
+                        }
+                    }
+                }
+            }
+        },
+        "/species": {
+            "get": {
+                "operationId": "LIST-species",
+                "summary": "List Species",
+                "tags": [
+                    "Species"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/species-input"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/films/{id}": {
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "operationId": "GET-films",
+                "summary": "Get Films",
+                "tags": [
+                    "Films"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/films-input"
+                        }
+                    }
+                }
+            }
+        },
+        "/films": {
+            "get": {
+                "operationId": "LIST-films",
+                "summary": "List Films",
+                "tags": [
+                    "Films"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/films-input"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/planets/{id}": {
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "operationId": "GET-planets",
+                "summary": "Get Planets",
+                "tags": [
+                    "Planets"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/planets-input"
+                        }
+                    }
+                }
+            }
+        },
+        "/planets": {
+            "get": {
+                "operationId": "LIST-planets",
+                "summary": "List Planets",
+                "tags": [
+                    "Planets"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/planets-input"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/people/{id}": {
+            "parameters": [
+                {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }
+            ],
+            "get": {
+                "operationId": "GET-people",
+                "summary": "Get People",
+                "tags": [
+                    "People"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/people-input"
+                        }
+                    }
+                }
+            }
+        },
+        "/people": {
+            "get": {
+                "operationId": "LIST-people",
+                "summary": "List People",
+                "tags": [
+                    "People"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/people-input"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "people-input": {
+            "title": "People",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "The name of this person."
+                },
+                "edited": {
+                    "type": "string",
+                    "description": "the ISO 8601 date format of the time that this resource was edited.",
+                    "format": "date-time"
+                },
+                "created": {
+                    "type": "string",
+                    "description": "The ISO 8601 date format of the time that this resource was created.",
+                    "format": "date-time"
+                },
+                "species": {
+                    "type": "array",
+                    "description": "The url of the species resource that this person is."
+                },
+                "height": {
+                    "type": "string",
+                    "description": "The height of this person in meters."
+                },
+                "eye_color": {
+                    "type": "string",
+                    "description": "The eye color of this person."
+                },
+                "birth_year": {
+                    "type": "string",
+                    "description": "The birth year of this person. BBY (Before the Battle of Yavin) or ABY (After the Battle of Yavin)."
+                },
+                "url": {
+                    "type": "string",
+                    "description": "The url of this resource",
+                    "format": "uri"
+                },
+                "gender": {
+                    "type": "string",
+                    "description": "The gender of this person (if known)."
+                },
+                "vehicles": {
+                    "type": "array",
+                    "description": "An array of vehicle resources that this person has piloted"
+                },
+                "hair_color": {
+                    "type": "string",
+                    "description": "The hair color of this person."
+                },
+                "starships": {
+                    "type": "array",
+                    "description": "An array of starship resources that this person has piloted"
+                },
+                "skin_color": {
+                    "type": "string",
+                    "description": "The skin color of this person."
+                },
+                "mass": {
+                    "type": "string",
+                    "description": "The mass of this person in kilograms."
+                },
+                "homeworld": {
+                    "type": "string",
+                    "description": "The url of the planet resource that this person was born on."
+                },
+                "films": {
+                    "type": "array",
+                    "description": "An array of urls of film resources that this person has been in."
+                }
+            },
+            "description": "A person within the Star Wars universe",
+            "$schema": "http://json-schema.org/draft-04/schema",
+            "required": [
+                "name",
+                "height",
+                "mass",
+                "hair_color",
+                "skin_color",
+                "eye_color",
+                "birth_year",
+                "gender",
+                "homeworld",
+                "films",
+                "species",
+                "vehicles",
+                "starships",
+                "url",
+                "created",
+                "edited"
+            ],
+            "type": "object"
+        },
+        "planets-input": {
+            "title": "Planet",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "The name of this planet."
+                },
+                "edited": {
+                    "type": "string",
+                    "description": "the ISO 8601 date format of the time that this resource was edited.",
+                    "format": "date-time"
+                },
+                "created": {
+                    "type": "string",
+                    "description": "The ISO 8601 date format of the time that this resource was created.",
+                    "format": "date-time"
+                },
+                "orbital_period": {
+                    "type": "string",
+                    "description": "The number of standard days it takes for this planet to complete a single orbit of its local star."
+                },
+                "surface_water": {
+                    "type": "string",
+                    "description": "The percentage of the planet surface that is naturally occuring water or bodies of water."
+                },
+                "population": {
+                    "type": "string",
+                    "description": "The average populationof sentient beings inhabiting this planet."
+                },
+                "url": {
+                    "type": "string",
+                    "description": "The hypermedia URL of this resource.",
+                    "format": "uri"
+                },
+                "films": {
+                    "type": "array",
+                    "description": "An array of Film URL Resources that this planet has appeared in."
+                },
+                "residents": {
+                    "type": "array",
+                    "description": "An array of People URL Resources that live on this planet."
+                },
+                "rotation_period": {
+                    "type": "string",
+                    "description": "The number of standard hours it takes for this planet to complete a single rotation on its axis."
+                },
+                "diameter": {
+                    "type": "string",
+                    "description": "The diameter of this planet in kilometers."
+                },
+                "gravity": {
+                    "type": "string",
+                    "description": "A number denoting the gravity of this planet. Where 1 is normal."
+                },
+                "climate": {
+                    "type": "string",
+                    "description": "The climate of this planet. Comma-seperated if diverse."
+                },
+                "terrain": {
+                    "type": "string",
+                    "description": "the terrain of this planet. Comma-seperated if diverse."
+                }
+            },
+            "description": "A planet.",
+            "$schema": "http://json-schema.org/draft-04/schema",
+            "required": [
+                "name",
+                "rotation_period",
+                "orbital_period",
+                "diameter",
+                "climate",
+                "gravity",
+                "terrain",
+                "surface_water",
+                "population",
+                "residents",
+                "films",
+                "created",
+                "edited",
+                "url"
+            ],
+            "type": "object"
+        },
+        "films-input": {
+            "title": "Film",
+            "properties": {
+                "edited": {
+                    "type": "string",
+                    "description": "the ISO 8601 date format of the time that this resource was edited.",
+                    "format": "date-time"
+                },
+                "release_date": {
+                    "type": "string",
+                    "description": "The release date at original creator country.",
+                    "format": "date"
+                },
+                "created": {
+                    "type": "string",
+                    "description": "The ISO 8601 date format of the time that this resource was created.",
+                    "format": "date-time"
+                },
+                "species": {
+                    "type": "array",
+                    "description": "The species resources featured within this film."
+                },
+                "title": {
+                    "type": "string",
+                    "description": "The title of this film."
+                },
+                "url": {
+                    "type": "string",
+                    "description": "The url of this resource",
+                    "format": "uri"
+                },
+                "producer": {
+                    "type": "string",
+                    "description": "The producer(s) of this film."
+                },
+                "planets": {
+                    "type": "array",
+                    "description": "The planet resources featured within this film."
+                },
+                "vehicles": {
+                    "type": "array",
+                    "description": "The vehicle resources featured within this film."
+                },
+                "director": {
+                    "type": "string",
+                    "description": "The director of this film."
+                },
+                "episode_id": {
+                    "type": "integer",
+                    "description": "The episode number of this film."
+                },
+                "starships": {
+                    "type": "array",
+                    "description": "The starship resources featured within this film."
+                },
+                "opening_crawl": {
+                    "type": "string",
+                    "description": "The opening crawl text at the beginning of this film."
+                },
+                "characters": {
+                    "type": "array",
+                    "description": "The people resources featured within this film."
+                }
+            },
+            "description": "A Star Wars film",
+            "$schema": "http://json-schema.org/draft-04/schema",
+            "required": [
+                "title",
+                "episode_id",
+                "opening_crawl",
+                "director",
+                "producer",
+                "release_date",
+                "characters",
+                "planets",
+                "starships",
+                "vehicles",
+                "species",
+                "url",
+                "created",
+                "edited"
+            ],
+            "type": "object"
+        },
+        "species-input": {
+            "title": "People",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "The name of this species."
+                },
+                "edited": {
+                    "type": "string",
+                    "description": "The ISO 8601 date format of the time that this resource was edited.",
+                    "format": "date-time"
+                },
+                "language": {
+                    "type": "string",
+                    "description": "The language commonly spoken by this species."
+                },
+                "created": {
+                    "type": "string",
+                    "description": "The ISO 8601 date format of the time that this resource was created.",
+                    "format": "date-time"
+                },
+                "homeworld": {
+                    "type": "string",
+                    "description": "The URL of a planet resource, a planet that this species originates from."
+                },
+                "url": {
+                    "type": "string",
+                    "description": "The hypermedia URL of this resource.",
+                    "format": "uri"
+                },
+                "eye_colors": {
+                    "type": "string",
+                    "description": "A comma-seperated string of common eye colors for this species, none if this species does not typically have eyes."
+                },
+                "classification": {
+                    "type": "string",
+                    "description": "The classification of this species."
+                },
+                "films": {
+                    "type": "array",
+                    "description": " An array of Film URL Resources that this species has appeared in."
+                },
+                "skin_colors": {
+                    "type": "string",
+                    "description": "A comma-seperated string of common skin colors for this species, none if this species does not typically have skin."
+                },
+                "average_lifespan": {
+                    "type": "string",
+                    "description": "The average lifespan of this species in years."
+                },
+                "average_height": {
+                    "type": "string",
+                    "description": "The average height of this person in centimeters."
+                },
+                "hair_colors": {
+                    "type": "string",
+                    "description": "A comma-seperated string of common hair colors for this species, none if this species does not typically have hair."
+                },
+                "designation": {
+                    "type": "string",
+                    "description": "The designation of this species."
+                },
+                "people": {
+                    "type": "array",
+                    "description": "An array of People URL Resources that are a part of this species."
+                }
+            },
+            "description": "A species within the Star Wars universe",
+            "$schema": "http://json-schema.org/draft-04/schema",
+            "required": [
+                "name",
+                "classification",
+                "designation",
+                "average_height",
+                "average_lifespan",
+                "hair_colors",
+                "skin_colors",
+                "eye_colors",
+                "homeworld",
+                "language",
+                "people",
+                "films",
+                "url",
+                "created",
+                "edited"
+            ],
+            "type": "object"
+        },
+        "vehicles-input": {
+            "title": "Vehicles Input",
+            "type": "object"
+        },
+        "starships-input": {
+            "title": "Starship",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "The name of this starship. The common name, such as Death Star."
+                },
+                "model": {
+                    "type": "string",
+                    "description": "The model or official name of this starship. Such as T-65 X-wing or DS-1 Orbital Battle Station."
+                },
+                "length": {
+                    "type": "string",
+                    "description": "The length of this starship in meters."
+                },
+                "created": {
+                    "type": "string",
+                    "description": "The ISO 8601 date format of the time that this resource was created.",
+                    "format": "date-time"
+                },
+                "crew": {
+                    "type": "string",
+                    "description": "The number of personnel needed to run or pilot this starship."
+                },
+                "edited": {
+                    "type": "string",
+                    "description": "the ISO 8601 date format of the time that this resource was edited.",
+                    "format": "date-time"
+                },
+                "hyperdrive_rating": {
+                    "type": "string",
+                    "description": "The class of this starships hyperdrive."
+                },
+                "url": {
+                    "type": "string",
+                    "description": "The hypermedia URL of this resource.",
+                    "format": "uri"
+                },
+                "passengers": {
+                    "type": "string",
+                    "description": "The number of non-essential people this starship can transport."
+                },
+                "MGLT": {
+                    "type": "string",
+                    "description": "The Maximum number of Megalights this starship can travel in a standard hour. A Megalight is a standard unit of distance and has never been defined before within the Star Wars universe. This figure is only really useful for measuring the difference in speed of starships. We can assume it is similar to AU, the distance between our Sun (Sol) and Earth."
+                },
+                "pilots": {
+                    "type": "array",
+                    "description": "An array of People URL Resources that this starship has been piloted by."
+                },
+                "films": {
+                    "type": "array",
+                    "description": "An array of Film URL Resources that this starship has appeared in."
+                },
+                "cargo_capacity": {
+                    "type": "string",
+                    "description": "The maximum number of kilograms that this starship can transport."
+                },
+                "cost_in_credits": {
+                    "type": "string",
+                    "description": "The cost of this starship new, in galactic credits."
+                },
+                "consumables": {
+                    "type": "string",
+                    "description": "The maximum length of time that this starship can provide consumables for its entire crew without having to resupply."
+                },
+                "manufacturer": {
+                    "type": "string",
+                    "description": "The manufacturer of this starship. Comma seperated if more than one."
+                },
+                "starship_class": {
+                    "type": "string",
+                    "description": "The class of this starship, such as Starfighter or Deep Space Mobile Battlestation."
+                },
+                "max_atmosphering_speed": {
+                    "type": "string",
+                    "description": "The maximum speed of this starship in atmosphere. n/a if this starship is incapable of atmosphering flight."
+                }
+            },
+            "description": "A Starship",
+            "$schema": "http://json-schema.org/draft-04/schema",
+            "required": [
+                "name",
+                "model",
+                "manufacturer",
+                "cost_in_credits",
+                "length",
+                "max_atmosphering_speed",
+                "crew",
+                "passengers",
+                "cargo_capacity",
+                "consumables",
+                "hyperdrive_rating",
+                "MGLT",
+                "starship_class",
+                "pilots",
+                "films",
+                "created",
+                "edited",
+                "url"
+            ],
+            "type": "object"
+        }
+    }
+}
