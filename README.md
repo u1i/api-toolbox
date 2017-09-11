@@ -10,7 +10,7 @@
 
 [Request Bin](https://requestb.in) / [hookbin](https://hookbin.com/)
 
-[Mockbin](mockbin.org)
+[Mockbin](http://mockbin.org)
 
 [httpbin](http://httpbin.org/)
 
