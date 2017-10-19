@@ -8,7 +8,7 @@
     "host": "swapi.co",
     "basePath": "/api",
     "schemes": [
-        "https"
+        "http"
     ],
     "consumes": [
         "application/json"
