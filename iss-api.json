@@ -1,0 +1,128 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "",
+        "title": "ISS API",
+        "description": ""
+    },
+    "host": "api.open-notify.org",
+    "schemes": [
+        "http"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/iss-pass.json": {
+            "get": {
+                "operationId": "GET-iss",
+                "summary": "Get ISS",
+                "tags": [
+                    "Isses"
+                ],
+                "parameters": [
+                    {
+                        "name": "lat",
+                        "in": "query",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "lon",
+                        "in": "query",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "schema": {
+                            "$ref": "#/definitions/iss-input"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "iss-input": {
+            "title": "ISS Input",
+            "type": "object",
+            "properties": {
+                "message": {
+                    "type": "string"
+                },
+                "request": {
+                    "type": "object",
+                    "properties": {
+                        "altitude": {
+                            "type": "integer"
+                        },
+                        "datetime": {
+                            "type": "integer"
+                        },
+                        "latitude": {
+                            "type": "number"
+                        },
+                        "longitude": {
+                            "type": "number"
+                        },
+                        "passes": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "response": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "duration": {
+                                "type": "integer"
+                            },
+                            "risetime": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                }
+            },
+            "example": {
+                "message": "success",
+                "request": {
+                    "altitude": 100,
+                    "datetime": 1503729363,
+                    "latitude": 1.29027,
+                    "longitude": 103.851959,
+                    "passes": 5
+                },
+                "response": [
+                    {
+                        "duration": 191,
+                        "risetime": 1503735367
+                    },
+                    {
+                        "duration": 635,
+                        "risetime": 1503740930
+                    },
+                    {
+                        "duration": 181,
+                        "risetime": 1503746939
+                    },
+                    {
+                        "duration": 627,
+                        "risetime": 1503782602
+                    },
+                    {
+                        "duration": 438,
+                        "risetime": 1503788476
+                    }
+                ]
+            }
+        }
+    }
+}
