@@ -6,6 +6,8 @@
 
 [SwaggerHub](swaggerhub.com)
 
+[Blueprint](https://github.com/apiaryio/api-blueprint/)
+
 ## API/HTTP Testing
 
 [Request Bin](https://requestb.in) / [hookbin](https://hookbin.com/)
