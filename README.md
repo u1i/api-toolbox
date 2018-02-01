@@ -24,3 +24,7 @@
 
 [ISS - Current Location](http://api.open-notify.org/iss-now.json)
 
+## API Documentation
+
+[Slate](https://github.com/lord/slate)
+
