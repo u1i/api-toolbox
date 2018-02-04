@@ -28,5 +28,4 @@
 
 [Slate](https://github.com/lord/slate)
 [API Embed - Embeddable code for Curl, Python etc](https://apiembed.com/)
-[https://gist.github.com/u1i/c096770d2eb2b753306eade0ea0dde7b](Get Python SDK from Swagger)
-
+[Generate Python Code from Swagger](https://gist.github.com/u1i/c096770d2eb2b753306eade0ea0dde7b)
