@@ -8,6 +8,11 @@
 
 [Blueprint](https://github.com/apiaryio/api-blueprint/)
 
+[apibldr](https://apibldr.com/)
+
+[Restlet](https://studio.restlet.com)
+
+
 ## API/HTTP Testing
 
 [Request Bin](https://requestb.in) / [hookbin](https://hookbin.com/)
