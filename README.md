@@ -29,6 +29,8 @@
 
 [HooKeepr](https://hookeepr.com/)
 
+[Majime](https://github.com/u1i/majime)
+
 ## Test APIs
 
 [International Space Station - When will it pass over Singapore?](http://api.open-notify.org/iss-pass.json?lat=1.290270&lon=103.851959)
@@ -45,7 +47,7 @@ https://reqres.in/
 
 ## Mock APIs
 
-[Mocky](https://www.mocky.io/)
+[Mocky](https://www.mocky.io/)   
 [Beeceptor](https://beeceptor.com)
 
 
