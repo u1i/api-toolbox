@@ -43,4 +43,10 @@
 
 https://reqres.in/
 
+## Mock APIs
+
+[Mocky](https://www.mocky.io/)
+[Beeceptor](https://beeceptor.com)
+
+
 
