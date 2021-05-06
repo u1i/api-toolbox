@@ -15,7 +15,7 @@
 
 ## API/HTTP Testing
 
-[Request Bin](https://requestb.in) / [hookbin](https://hookbin.com/)
+[hookbin](https://hookbin.com/)
 
 [Mockbin](http://mockbin.org)
 
@@ -26,8 +26,6 @@
 [webhook.site](https://webhook.site)
 
 [Newman - Run Postman Collections](https://hub.docker.com/r/postman/newman_alpine33/)
-
-[HooKeepr](https://hookeepr.com/)
 
 [Majime](https://github.com/u1i/majime)
 
